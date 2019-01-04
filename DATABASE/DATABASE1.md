@@ -24,9 +24,16 @@
 > Structured Query Language - 구조적 질의 언어.<br>
 해당 질의 언어를 통해 데이터베이스를 제어하고 관리할 수 있다.
 
-* 데이터정의어(DDL) - CREATE(정의), ALTER(변경), DROP(삭제)
-* 데이터조작어(DML) - SELECT(검색), INSERT(삽입), UPDATE(갱신), DELETE(삭제) *튜플
-* 데이터제어어(DCL) - COMMIT(결과 저장), ROLLBACK(비정상 종료 복구), GRANT(권한 부여), REVOKE(권한 취소)
+* 데이터정의어(DDL) - DB스키마를 정의하거나 조작하기 위해 사용.<br>
+<b>CREATE(정의), ALTER(변경), DROP(삭제)</b>
+* 데이터조작어(DML) - 데이터 조작하기 위해 사용, 실질적인 데이터 처리.<br>
+<b>SELECT(검색), INSERT(삽입), UPDATE(갱신), DELETE(삭제) *튜플</b>
+* 데이터제어어(DCL) - 데이터 제어하기 위해 사용, 무결성, 보안 등을 제어.<br>
+  <b>COMMIT(결과 저장), ROLLBACK(비정상 종료 복구), GRANT(권한 부여), REVOKE(권한 취소)</b>
+
+* DISTINCT : 테이블의특정 항목에 같은 이름이 중복되어 입력되어 있는 경우 그 중 첫번째 한개만 검색.
+
+> <b>Select 속성명 from 테이블이름 where 조건 group by 속성명 having 그룹에 대한 조건 order by 정렬</b>
 
 ***
 
