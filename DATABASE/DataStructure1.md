@@ -44,3 +44,38 @@ Top이 0이 되면 더 이상 삭제할 자료가 없으므로 underflow.<br>
 * Postorder(후위) : Left->right->Root
 
 <img src="https://user-images.githubusercontent.com/45118806/50745370-256ac400-126d-11e9-82a0-83ac07115a95.PNG"></img>
+
+<h3>수식의 표기법</h3>
+
+* Prefix 전위 표기법 : 연산자->left->Right<br>
+연산자를 앞으로 배치하는 방식.
+
+```
+(a + b) * c / d - e
+=> (((a + b) * c) / d) - e
+=> - (((a + b) * c) / d) e
+=> - / ((a + b) * c) d e
+=> - / * (a + b) c d e
+=> - / * + a b c d e
+```
+
+
+* Infix 중위 표기법 : Left->연산자->Right<br>
+두개의 피연산자 사이에 연산자가 존재하는 형태.<br>
+일반적인 사용법이기 때문에 직관적으로 받아들일 수 있다.
+
+```
+(a + b) * c / d + e
+```
+
+* Postfix 후위 표기법 : Left->Right->연산자<br>
+연산자를 피연산자의 뒷쪽에 표시하는 방법.
+
+```
+(a + b) * c / d + e
+=> (((a + b) * c) / d ) + e
+=> (((a + b) * c) / d ) e +
+=> ((a + b) * c) d / e +
+=> (a + b) c * d / e +
+=> a b + c * d / e +
+```
